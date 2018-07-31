@@ -1,0 +1,6 @@
+[auth]
+sandbox=
+salesforce_username=
+salesforce_password=
+salesforce_token_sandbox=
+salesforce_token_live=
