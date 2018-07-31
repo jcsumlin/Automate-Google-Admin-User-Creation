@@ -10,19 +10,7 @@ import configparser
 
 config = configparser.ConfigParser()
 config.read('auth.ini')
-SANDBOX = config.get('auth', 'sandbox')
-
-def str2bool(v):
-    if v.lower in ("yes", "true", "t", "1"):
-        SANDBOX = True
-    elif v.lower in ("no", "false", "f", "0"):
-        SANDBOX = False
-    else:
-        print("Invalid Sandbox Value!")
-        exit()
-    return SANDBOX
-
-str2bool(SANDBOX)
+SANDBOX = False
 
 def login_to_salesforce(sandbox=True):
     # iKlXytmUw85PBaXJjHEaSvxPc - REAL
